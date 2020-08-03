@@ -8,48 +8,131 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<title>GameZilla</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  	<style>
+		  body {
+		    font: 20px Montserrat, sans-serif;
+		    line-height: 1.8;
+		    color: #f5f6f7;
+		  }
+		  p {font-size: 16px;}
+		  .margin {margin-bottom: 45px;}
+		  .bg-1 { 
+		    background-color: #1abc9c; /* Green */
+		    color: #ffffff;
+		  }
+		  .bg-2 { 
+		    background-color: #474e5d; /* Dark Blue */
+		    color: #ffffff;
+		  }
+		  .bg-3 { 
+		    background-color: #ffffff; /* White */
+		    color: #555555;
+		  }
+		  .bg-4 { 
+		    background-color: #2f2f2f; /* Black Gray */
+		    color: #fff;
+		  }
+		  .container-fluid {
+		    padding-top: 70px;
+		    padding-bottom: 70px;
+		  }
+		  .navbar {
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border: 0;
+		    border-radius: 0;
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    letter-spacing: 5px;
+		  }
+		  .navbar-nav  li a:hover {
+		    color: #1abc9c !important;
+		  }
+		  .img-circle{
+		  	border-radius: 50%;
+		  }
+	</style>
 </head>
 <body>
 		<!-- navbar -->
+				<!-- navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="#">GameZilla</a>
+			  <a class="navbar-brand" href="index.html">GameZilla</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      <li class="nav-item ">
+			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="Games.html">Games</a>
 			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">About</a>
+			      <li class="nav-item active">
+			        <a class="nav-link" href="Form.html">About</a>
 			      </li>
 			    </ul>
 			    
 			  </div>
 		</nav>
 
-		<!-- end of navbar -->
-		<form action="https://send.pageclip.co/weYJLEnCKsTYWLH5vImT3CplGfx3Ve9i" class="pageclip-form" method="post">
-		  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-		  <input type="text" name="name" value="Roscoe Jones" />
-		  <input type="email" name="email" value="roscoe@example.com" />
 
-		  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-		  <button type="submit" class="pageclip-form__submit">
-		    <span>Send</span>
-		  </button>
-		</form>
+
+		<!-- end of navbar -->
+		<!-- First Container -->
+		<div class="container-fluid bg-3 text-center">
+		  <h3 class="margin">Who Am I?</h3>
+		  <img src="images/Chetan.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="20%" height="30%">
+		  <h3>Chetan Aggarwal</h3>
+		</div>
+
+		<!-- Second Container -->
+		<div class="container-fluid bg-2 text-center">
+		  <h3 class="margin">What Am I?</h3>
+		  <p>I am a developer and I am good in Problem Solving skills . My main Interest are C++ programming , Data Structure and Algorithms , Web Development and Augmented Reality .</p>
+		 <!--  <a href="#" class="btn btn-default btn-lg">
+		    <span class="glyphicon glyphicon-search"></span> Search
+		  </a> -->
+		</div>
+
+		<!-- Third Container (Grid) -->
+		<div class="container-fluid bg-3 text-center">    
+		  <h3 class="margin">Where To Find Me?</h3><br>
+		  <div class="row">
+		    <div class="col-sm-4">
+		      <p>In My Room , Working.</p>
+		      <img src="images/laptop.jpg" class="img-responsive margin" style="width:50%" alt="Image">
+		    </div>
+		    <div class="col-sm-4"> 
+		      <p>In My College with Friends</p>
+		      <img src="images/college.jpg" class="img-responsive margin" style="width:50%" alt="Image">
+		    </div>
+		    <div class="col-sm-4"> 
+		      <p> With Nature.</p>
+		      <img src="images/nature.jpg" class="img-responsive margin" style="width:50%" alt="Image">
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Footer -->
+			<footer class="container-fluid bg-4 text-center">
+			  <p>GameZilla Made By Chetan Aggarwal</a></p> 
+			  <a href="https://www.twitter.com/AggChetan"><i class="icon fa-twitter">&nbsp;</i>Twitter</a>
+			  <a href="https://www.facebook.com/chetan.aggarwal.3990"><i class="icon fa-facebook">&nbsp;</i>Facebook</a>
+			  <a href="https://www.linkedin.com/in/chetan-aggarwal-6b7535190/"><i class="icon fa-instagram">&nbsp;</i>LinkedIn</a>
+			  <a href="https://www.github.com/chetan2002"><i class="icon fa-github">&nbsp;</i>Github</a>
+			  					
+
+			    <div class="copyright">
+						&copy; All Right Reserved.
+			    </div>						
+			</footer>
 
 	<script src="js/jquery351.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
