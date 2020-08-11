@@ -4,6 +4,7 @@
 	<title></title>
 	<style >
 		body {
+      background-color: white;
   text-align:center;
   font-family: helvetica;
 }
@@ -145,7 +146,7 @@ Game.Draw = function(context, snake) {
     }
     
     // Draw White Stage
-        context.fillStyle = "white";
+        context.fillStyle = "black";
         context.fillRect(0, 0, snake.stage.width, snake.stage.height);
         
     // Snake Position
